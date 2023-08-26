@@ -1,4 +1,4 @@
-//Magyar Róbert Attila [BIXYQG]
+//Magyar RÃ³bert Attila [BIXYQG]
 #include <iostream>
 #include "Book.h"
 #include "Shelf.h"
@@ -11,13 +11,14 @@ using namespace std;
 
 int main()
 {
-    //Elõször kezdjük az alapokkal, hozzuk létre a könyvesszekrenyt
+    std::cout<<"Hello World"<<std::endl;
+    //ElÅ‘szÃ¶r kezdjÃ¼k az alapokkal, hozzuk lÃ©tre a kÃ¶nyvesszekrenyt
     std::cout<<"Adja meg a konyvespolcok meretet!"<<std::endl;
     int n;
     cin>>n;
     Szekreny s(n);
 
-    //Szükséges lesz egy könyv objektum is a folyamat során
+    //SzÃ¼ksÃ©ges lesz egy kÃ¶nyv objektum is a folyamat sorÃ¡n
     Book b;
 
     //Inditsuk el a folyamat ciklust ami terminalasig/megtelesig olvassa be a konyvek meretet
@@ -26,7 +27,7 @@ int main()
         s.folyamat(b);
     }
 
-    //Ez a resz feelos azert, hogy ha esetleg valami rosszul sül el akkor elkapja a kivételt
+    //Ez a resz feelos azert, hogy ha esetleg valami rosszul sÃ¼l el akkor elkapja a kivÃ©telt
     catch(...){cout<<"ERROR";}
 
     return 0;
